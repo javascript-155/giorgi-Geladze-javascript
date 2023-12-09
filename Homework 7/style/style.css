@@ -1,0 +1,103 @@
+.inputn {grid-area: input;}
+.arithmetic {grid-area: arit;}
+.numbers {grid-area: num;}
+.cdot {grid-area: D;}
+.result {grid-area: R;}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'input input input input'
+    'arit arit arit arit'
+    'num num num R'
+    'num num num R'
+    'num num num R'
+    'D D D R';
+    border: 2px solid black;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 10px;
+    background: rgb(113, 179, 157);
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.inputn input {
+    width: 98%;
+    height: 50px;
+    border: 2px solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: #c9c9c9;
+}
+
+.arithmetic button{
+    height: 60px;
+    width: 100px;
+    background: ;
+}
+
+.arithmetic button:hover {
+    background: rgb(186, 186, 186);
+    transition: all 0.5s ease-in-out;
+}
+
+.numbers button{
+    background: white;
+    height: 60px;
+    width: 100px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.numbers button:hover {
+    background: rgb(186, 186, 186);
+    transition: all 0.5s ease-in-out;
+}
+
+.cdot button {
+    background: white;
+    height: 60px;
+    width: 100px;
+}
+
+.cdot button:hover {
+    background: rgb(186, 186, 186);
+    transition: all 0.5s ease-in-out;
+}
+
+.cdot button.n0 {
+    border-bottom-left-radius: 10px;
+}
+
+.cdot button.C {
+    background: #ff5050 ;
+}
+
+.cdot button.C:hover {
+    background: rgb(210, 16, 16);
+    transition: all 0.5s ease-in-out;
+}
+
+.result button {
+    height: 240px;
+    width: 100px;
+}
+
+.result button.equal {
+    border-bottom-right-radius: 10px;
+    background: rgb(243, 175, 112);
+}
+
+.result button.equal:hover {
+    background: #ff5500;
+    transition: all 0.5s ease-in-out;
+
+}
