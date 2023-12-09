@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ქალქულეითა</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="grid">
+            <div class="inputn">
+                <input class="inputnumber"  placeholder="შეიყვანე მონაცემები">
+            </div>
+            <div class="arithmetic">
+                <button onclick="Arith('+')" class="plus">+</button>
+                <button onclick="Arith('-')" class="less">-</button>
+                <button onclick="Arith('*')" class="multiply">*</button>
+                <button onclick="Arith('/')" class="division">/</button>
+            </div>
+            <div class="numbers">
+                <div class="above">
+                    <button onclick="N('1')" class="n1">1</button>
+                    <button onclick="N('2')" class="n2">2</button>
+                    <button onclick="N('3')" class="n3">3</button>                    
+                </div>
+                <div class="middle">
+                    <button onclick="N('4')" class="n4">4</button>
+                    <button onclick="N('5')" class="n5">5</button>
+                    <button onclick="N('6')" class="n6">6</button>
+                </div>
+                <div class="under">
+                    <button onclick="N('7')" class="n7">7</button>
+                    <button onclick="N('8')" class="n8">8</button>
+                    <button onclick="N('9')" class="n9">9</button>
+                </div>
+            </div>
+            <div class="cdot">
+                <button onclick="N('0')" class="n0">0</button>
+                <button onclick="N('.')" class="dot">.</button>
+                <button onclick="c('c')" class="C">C</button>
+            </div>
+            <div class="result">
+                <button onclick="Equal()" class="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./javascript/script.js" defer></script>
+</body>
+</html>
