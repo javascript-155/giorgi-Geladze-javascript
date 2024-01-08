@@ -1,0 +1,360 @@
+<html>
+  <head>
+    <title>ფილმები</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/GeneralSearchBar/style/GeneralSearchBar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/logo-blue/favicon.png">
+  </head>
+  <body>
+    <div class="grid-container">
+        <header>
+        <div class="navbar">
+            <div class="navbar-wrapper">
+                <div class="logo-wrapper">
+                <!-- <h1 class="logo">გელაძე</h1> -->
+                <a href="">
+                    <img class="navbar-img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/logo-blue/logo2.png">
+                </a>
+              </div>
+              <div class="menu-container">
+                  <ul class="menu-list">
+                      <li class="menu-list-item-main">
+                          <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/MAIN/index.html">მთავარი</a>
+                      </li>
+                      <li class="menu-list-item">
+                          <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films.html">ფილმები</a>
+                      </li>
+                      <li class="menu-list-item">
+                          <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/SERIES/series.html">სერიალები</a>
+                      </li>
+                      <li class="menu-list-item">
+                          <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/ANIMATIONn/animation.html">ანიმაციები</a>
+                      </li>
+                      <li class="menu-list-item">
+                          <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/POPULAR/popular.html">პოპულარული</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="profile-container">
+                <div class="profile-icon">
+                    <a href="">
+                        <img src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/icon/user-regular.svg">
+                    </a>
+                </div>
+                <div class="profile-listing">
+                    <ul class="profile-list">
+                        <li class="profile-list-item">
+                            <span class="profile-text">
+                                <div class="dropdown">
+                                    <button class="dropbtn">პროფილი</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">პროფილზე გადასვლა</a>
+                                        <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/REGISTRATION/registration.html">რეგისტრაცია</a>
+                                        <a href="#">გასვლა</a>
+                                    </div>
+                                </div>
+                            </span>
+                            <i class="fa-solid fa-bars"></i>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+          <!--! middle of the navbar-sidebar -->
+        <div class="sidebar">
+            <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/MAIN/index.html">
+            <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/GeneralSearchBar/GeneralSearchBar.html" class="active">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="">
+            <i class="fa-solid fa-user-group"></i>
+            </a>
+            <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/Films Listing/FilmsLists.html">
+            <i class="fa-solid fa-bookmark"></i>
+            </a>
+            <a href="">
+            <i class="fa-solid fa-gear"></i>
+            </a>
+          </div>
+          <!--! films -->
+          <main>
+                <div class="films-container">
+                    <div class="searchBar">
+                        <input type="text" id="input" placeholder="ჩაწერეთ საძიებო ტექსტი" oninput="searchContact()">
+                        <!-- <button class="search-button">ძიება</button> -->
+                    </div>
+                
+                    <ul id="items">
+                        <li data-name="Rick & morty">
+                            <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films-each-one/Breaking Bad/BreakingBad.html">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/POPULAR/popular-image/Rick&Morty.png" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>Rick & Morty</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!</p>
+                                    <span id="dots1">...</span>
+                                    <button onclick="toggleReadMore(event, 1)" id="myBtn1">Read more</button>
+                                    <br>
+                                    <span class="more" id="more1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li data-name="Sherlock Holmes">
+                            <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films-each-one/Breaking Bad/BreakingBad.html">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/SERIES/series/sherlockholmes.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>Shelock Holmes</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                    <span id="dots2">...</span>
+                                    <button onclick="toggleReadMore(event, 2)" id="myBtn2">Read more</button>
+                                    <br>
+                                    <span class="more" id="more2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li data-name="Breaking Bad">
+                            <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films-each-one/Breaking Bad/BreakingBad.html">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films/breakingbad.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>Breaking Bad</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                    <span id="dots3">...</span>
+                                    <button onclick="toggleReadMore(event, 3)" id="myBtn3">Read more</button>
+                                    <br>
+                                    <span class="more" id="more3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+
+                        <li data-name="Interstellar">
+                            <a href="#">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films/interstellar.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>interstellar</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                        <span id="dots4">...</span>
+                                        <button onclick="toggleReadMore(event, 4)" id="myBtn4">Read more</button>
+                                        <br>
+                                        <span class="more" id="more4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                
+                        <li data-name="intouchables">
+                            <a href="#">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films/intouchables.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>intouchables</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                        <span id="dots5">...</span>
+                                        <button onclick="toggleReadMore(event, 5)" id="myBtn5">Read more</button>
+                                        <br>
+                                        <span class="more" id="more5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+
+                        <li data-name="oppenheimer">
+                            <a href="#">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films/oppenheimer.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>oppenheimer</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                        <span id="dots6">...</span>
+                                        <button onclick="toggleReadMore(event, 6)" id="myBtn6">Read more</button>
+                                        <br>
+                                        <span class="more" id="more6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        </li>
+                        
+                        <li data-name="Spiderman No Way Home">
+                            <a href="#">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films/spidermannowayhome.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>Spiderman No Way Home</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                        <span id="dots7">...</span>
+                                        <button onclick="toggleReadMore(event, 7)" id="myBtn7">Read more</button>
+                                        <br>
+                                        <span class="more" id="more7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        </li>
+
+                        <li data-name="The Dark Knight">
+                            <a href="#">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films/thedarkknight.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>The Dark Knight</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                        <span id="dots8">...</span>
+                                        <button onclick="toggleReadMore(event, 8)" id="myBtn8">Read more</button>
+                                        <br>
+                                        <span class="more" id="more8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        </li>
+                
+                        <li data-name="The Godfather">
+                            <a href="#">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films/thegodfather.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>The Godfather</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                        <span id="dots9">...</span>
+                                        <button onclick="toggleReadMore(event, 9)" id="myBtn9">Read more</button>
+                                        <br>
+                                        <span class="more" id="more9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                    </div>
+                            </div>
+                        </a>
+                        </li>
+
+                        <li data-name="The Green Mile">
+                            <a href="#">
+                            <div class="film-item">
+                                <div class="item">
+                                    <img class="img" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/films/thegreenmile.jpg" alt="">
+                                </div>
+                                <div class="movie-item-button">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                                <div class="item-text">
+                                    <h1>The Green Mile</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam fugit nulla ex commodi est maxime, totam recusandae, placeat modi blanditiis beatae, itaque atque at? Recusandae exercitationem excepturi porro consequuntur!
+                                        <span id="dots10">...</span>
+                                        <button onclick="toggleReadMore(event, 10)" id="myBtn10">Read more</button>
+                                        <br>
+                                        <span class="more" id="more10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque, nisi porro ducimus, unde officiis aperiam, illo magnam placeat doloribus consectetur nam fuga mollitia eum nesciunt sequi ipsa quibusdam voluptas!</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+          </main>
+          <!--! films -->
+          <footer>
+            <div class="footer">
+                <div class="footer-links">
+                    <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/MAIN/index.html">GELADZE</a>
+                    <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/About Us/AboutUs.html">ჩვენს შესახებ</a>
+                    <a href="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/Contact Us/ContactUs.html">დაგვიკავშირდით</a>
+                </div>
+                <p>პროექტი მზადდებოდა პერიოდში: 07.-10. /2023  All Rights Are Received</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/FILMS/script/ReadMore.js"></script>
+    <script type="text/javascript" src="https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/GeneralSearchBar/script/GeneralSearchBar.js"></script>
+  </body>
+</html>
