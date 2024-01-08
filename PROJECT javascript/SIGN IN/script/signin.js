@@ -21,14 +21,14 @@ class UserSignIn {
 
             if (foundUser) {
                 alert("შესვლა განხორციელდა");
-                window.location.href = '/MAIN/index.html';
+                window.location.href = 'https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/MAIN/index.html';
             } else if (users.some(user => user.email === mail)) {
                 alert("პაროლი არ ემთხვევა");
             } else if (users.some(user => user.password === pass)) {
                 alert("მცდარია");
             } else {
                 alert("მცდარი მონაცემები");
-                window.location.href = '/REGISTRATION/registration.html';
+                window.location.href = 'https://javascript-155.github.io/giorgi-Geladze-javascript/PROJECT%20javascript/REGISTRATION/registration.html';
             }
         } else {
             alert("ასეთი რეგისტრირებული არ არსებობს");
