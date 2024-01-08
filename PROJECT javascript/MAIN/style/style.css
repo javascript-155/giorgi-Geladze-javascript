@@ -1,0 +1,2422 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&display=swap');
+
+.navbar { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: navbar; }
+.sidebar { -ms-grid-row: 2; -ms-grid-row-span: 4; -ms-grid-column: 1; grid-area: sidebar; }
+.main-content { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: maincontent; }
+.movie-list-container1 { -ms-grid-row: 3; -ms-grid-column: 2; grid-area: movie1; }
+.movie-list-container2 { -ms-grid-row: 4; -ms-grid-column: 2; grid-area: movie2; }
+.movie-list-container3 { -ms-grid-row: 5; -ms-grid-column: 2; grid-area: movie3; }
+footer { -ms-grid-row: 6; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: footer; }
+
+
+.grid-container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 
+    'navbar navbar'
+    'sidebar maincontent'
+    'sidebar movie1'
+    'sidebar movie2'
+    'sidebar movie3'
+    'footer footer';
+    /* grid-template-columns: repeat(auto-fit, minmax(1fr)); */
+
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}   
+
+/*! responsive */
+/*! responsive */
+/*! responsive */
+/*! responsive */
+
+/* პატარა ტელეფონი (მაგალითად, iPhone SE) */
+@media (max-width: 320px) {
+    html::-webkit-scrollbar {
+        width: 1px;
+    }
+    body {
+        font-size: 65%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 40px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 70px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 25px;
+           -moz-column-gap: 25px;
+                column-gap: 25px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 20px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 97%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 85%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 1px 1px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 18px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 12px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 10px;
+    }
+    body .movie-list-container1 {
+        margin-top: 450px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-item img {
+        /* width: 120px; */
+        /* height: 130px; */
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 60px;
+        top: 60px;
+        right: -60px;
+    }
+    .footer-links {
+        padding-left: 10px;
+    }
+}
+
+/* სტანდარტული M ტელეფონი (მაგალითად, iPhone 6/7/8) */
+@media (min-width: 321px) and (max-width: 375px) {
+    body {
+        font-size: 75%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 40px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 70px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 35px;
+           -moz-column-gap: 35px;
+                column-gap: 35px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 20px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 97%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 100%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 1px 1px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 28px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 16px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 5px;
+    }
+    body .movie-list-container1 {
+        margin-top: 500px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-item img {
+        /* width: 280px; */
+        /* height: 130px; */
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 60px;
+        top: 60px;
+        right: -60px;
+        z-index: 10;
+        position: absolute;
+    }
+    .footer-links {
+        padding-left: 10px;
+    }
+}
+
+/* სტანდარტული L ტელეფონი (მაგალითად, iPhone 6/7/8) */
+@media (min-width: 376px) and (max-width: 425px) {
+    body {
+        font-size: 80%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 40px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 70px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 20px;
+           -moz-column-gap: 20px;
+                column-gap: 20px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    .dropdown-content {
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 20px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 97%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 80%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 1px 1px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 18px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 14px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 15px;
+    }
+    body .movie-list-container1 {
+        margin-top: 500px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-item img {
+        /* width: 120px; */
+        /* height: 130px; */
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 60px;
+        top: 60px;
+        right: -60px;
+    }
+    footer {
+        padding-left: 10px;
+    }
+}
+
+/* სტანდარტული ტელეფონი (მაგალითად, iPhone 6/7/8) */
+@media (min-width: 426px) and (max-width: 520px) {
+    body {
+        font-size: 80%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 40px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 70px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 20px;
+           -moz-column-gap: 20px;
+                column-gap: 20px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 20px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 97%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 80%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 1px 1px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 18px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 14px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 10px;
+    }
+    body .movie-list-container1 {
+        margin-top: 500px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-item img {
+        /* width: 120px; */
+        /* height: 130px; */
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 60px;
+        top: 60px;
+        right: -60px;
+    }
+    footer {
+        font-size: 70%;
+        padding-left: 10px;
+    }
+}
+
+/* სტანდარტული ტელეფონი (მაგალითად, iPhone 6/7/8) */
+@media (min-width: 521px) and (max-width: 620px) { 
+    body {
+        font-size: 85%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 40px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 70px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 20px;
+           -moz-column-gap: 20px;
+                column-gap: 20px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    .dropdown-content {
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 20px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 97%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 80%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 1px 1px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 18px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 14px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 15px;
+    }
+    body .movie-list-container1 {
+        margin-top: 500px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-item img {
+        /* width: 120px; */
+        /* height: 130px; */
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 60px;
+        top: 60px;
+        right: -60px;
+    }
+    footer {
+        font-size: 70%;
+        padding-left: 10px;
+    }
+}
+
+/* სტანდარტული ტელეფონი (მაგალითად, iPhone 6/7/8) */
+@media (min-width: 621px) and (max-width: 767px) {
+    body {
+        font-size: 80%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 40px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 70px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 25px;
+           -moz-column-gap: 25px;
+                column-gap: 25px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    .dropdown-content {
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 20px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 97%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 80%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 1px 1px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 18px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 14px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 15px;
+    }
+    body .movie-list-container1 {
+        margin-top: 500px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-item img {
+        /* width: 120px; */
+        /* height: 130px; */
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 60px;
+        top: 60px;
+        right: -60px;
+    }
+    footer {
+        font-size: 70%;
+        padding-left: 12px;
+    }
+}
+
+/* დიდი ტელეფონი (მაგალითად, iPhone 6/7/8 Plus) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 90%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 40px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 70px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 25px;
+           -moz-column-gap: 25px;
+                column-gap: 25px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    .dropdown-content {
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 20px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 98%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 80%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 5px 5px;
+        padding-right: 20px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 18px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 14px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 15px;
+    }
+    body .movie-list-container1 {
+        margin-top: 500px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 60px;
+        top: 60px;
+        right: -60px;
+    }
+    footer {
+        font-size: 80%;
+        padding-left: 10px;
+    }
+}
+
+/* პატარა ტაბლეტი (მაგალითად, iPad Mini) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 90%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 40px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 70px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 25px;
+           -moz-column-gap: 25px;
+                column-gap: 25px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    .dropdown-content {
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 20px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 98%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 80%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 5px 5px;
+        padding-right: 20px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 18px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 14px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 15px;
+    }
+    body .movie-list-container1 {
+        margin-top: 600px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 60px;
+        top: 60px;
+        right: -60px;
+    }
+    footer {
+        font-size: 80%;
+        padding-left: 10px;
+    }
+}
+
+/* სტანდარტული ტაბლეტი (მაგალითად, iPad) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 60px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 100px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 25px;
+           -moz-column-gap: 25px;
+                column-gap: 25px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    .dropdown-content {
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 50px;
+        top: 40;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 98%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 80%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 5px 5px;
+        padding-right: 20px;
+        width: 25px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 18px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 14px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 15px;
+    }
+    body .movie-list-container1 {
+        margin-top: 750px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 100px;
+        top: 60px;
+        right: -20px;
+    }
+    footer {
+        font-size: 100%;
+        padding-left: 10px;
+    }
+}
+
+/* პატარა ლეპტოპი */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    body {
+        font-size: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 85px;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 1px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 110px;
+    }
+    .menu-container .menu-list {
+        -webkit-column-gap: 45px;
+           -moz-column-gap: 45px;
+                column-gap: 45px;
+    }
+    .menu-list {
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list {
+        gap: 0;
+    }
+    .dropdown-content {
+    }
+    body .sidebar {
+        width: 20px;
+        -webkit-column-gap: 5px;
+           -moz-column-gap: 5px;
+                column-gap: 5px;
+        padding-top: 60px;
+        top: 50;
+    }
+    .sidebar a i {
+        font-size: 10px;
+    }
+    .main-content .slayd-wrapper {
+        left: 20px;
+        top: 40px;
+        width: 98%;
+    }
+    .profile-listing ul li {
+        padding-right: 15px;
+    }
+    .profile-listing ul {
+        padding-left: 25px;
+    }
+    .profile-icon a img {
+        width: 7px;
+    }
+    ul .profile-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .profile-list-item {
+        gap: 0px;
+    }
+    .dropdown .dropbtn {
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 80%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 20px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+    .dropdown-content a {
+        padding: 5px 5px;
+        padding-right: 20px;
+        width: 40px;
+        height: 5px;
+        font-size: 50%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 50px;
+        top: 50px;
+    }
+    .main-content .slayd-text-wrapper p {
+        font-size: 26px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 18px;
+        padding: 2px 5px;
+    } 
+    .slayd-text-wrapper .buttons {
+        gap: 15px;
+    }
+    body .movie-list-container1 {
+        margin-top: 850px;
+        margin-left: 30px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 30px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-container1 .movie-list-wrapper {
+        padding: 0px 0px 0px 0px;
+    }
+    body .movie-list-title {
+        font-size: 16px;
+        top: 0%;
+        padding: 30px;
+    }
+    .movie-list-wrapper .menu-list {
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .movie-list-wrapper .movie-list {
+        height: 180px;
+    }
+    .movie-list .movie-item:hover .movie-item-img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 100px;
+        top: 60px;
+        right: -20px;
+    }
+    footer {
+        font-size: 100%;
+        padding-left: 10px;
+    }
+}
+
+/* სტანდარტული ლეპტოპი */
+@media (min-width: 1440px) and (max-width: 1680px) {
+    body {
+        font-size: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 85px;
+        width: 100%;
+        top: 0;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 50px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 150px;
+        margin-top: 1px;
+    }
+    .menu-container .menu-list {
+        gap: 30px;
+    }
+    .menu-list {
+        gap: 30px;
+    }
+    .profile-list {
+        gap: 30px;
+    }
+    .main-content .slayd-wrapper {
+        left: 35px;
+        top: 85px;
+        width: 97.3%;
+        border: black;
+    }
+    .profile-icon a img {
+        width: 20px;
+        margin-left: 10px;
+    }
+    .dropdown .dropbtn {
+        padding: 12px 10px;
+    }
+    .dropbtn {
+        font-size: 100%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 160px;
+    }
+    .dropdown-content a {
+        padding: 12px 16px;
+        font-size: 100%;
+    }
+    /* ! დროაბითია */
+    /* ! შესწორება სჭირდება */
+    .myPictures img {
+        width: 1390;
+        height: 555px;
+        object-fit: cover;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 150px;
+        top: 200px;
+    }
+    .main-content .slayd-text-wrapper p {
+        margin-bottom: 20px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 16px;
+        padding: 5px 10px;
+    } 
+    .slayd-text-wrapper .buttons {
+        -webkit-column-gap: 10px;
+           -moz-column-gap: 10px;
+                column-gap: 10px;
+    }
+    body .movie-list-container1 {
+        margin-top: 1100px;
+        margin-left: 70px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 70px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-wrapper .menu-list {
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+        height: 300px;
+    }
+    .movie-item:hover .movie-item-img {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        margin: 0 0px;
+        opacity: 0.6;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 120px;
+        width: 100px;
+        top: 100px;
+        right: 0px;
+    }
+}
+
+/* სტანდარტული ლეპტოპი */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    body {
+        font-size: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 85px;
+        width: 100%;
+        top: 0;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 50px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 150px;
+        margin-top: 1px;
+    }
+    .menu-container .menu-list {
+        gap: 30px;
+    }
+    .menu-list {
+        gap: 30px;
+    }
+    .profile-list {
+        gap: 30px;
+    }
+    /* ! დროაბითია */
+    /* ! შესწორება სჭირდება */
+    .myPictures img {
+        width: 1395;
+        height: 555px;
+        object-fit: cover;
+    }
+    .main-content .slayd-wrapper {
+        left: 35px;
+        top: 85px;
+        width: 97.3%;
+        border: black;
+    }
+    .profile-icon a img {
+        width: 20px;
+        margin-left: 10px;
+    }
+    .dropdown .dropbtn {
+        padding: 12px 10px;
+    }
+    .dropbtn {
+        font-size: 100%;
+    }
+    .dropdown .dropdown-content {
+        min-width: 160px;
+    }
+    .dropdown-content a {
+        padding: 12px 16px;
+        font-size: 100%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 150px;
+        top: 200px;
+    }
+    .main-content .slayd-text-wrapper p {
+        margin-bottom: 20px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 16px;
+        padding: 5px 10px;
+    } 
+    .slayd-text-wrapper .buttons {
+        -webkit-column-gap: 10px;
+           -moz-column-gap: 10px;
+                column-gap: 10px;
+    }
+    body .movie-list-container1 {
+        margin-top: 1100px;
+        margin-left: 70px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 70px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-wrapper .menu-list {
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+        height: 300px;
+    }
+    .movie-item:hover .movie-item-img {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        margin: 0 0px;
+        opacity: 0.6;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 120px;
+        width: 100px;
+        top: 100px;
+        right: 0px;
+    }
+}
+
+/* დიდი ლეპტოპი */
+@media (min-width: 1681px) and (max-width: 2399px) {
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 85px;
+        width: 100%;
+        top: 0;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 50px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 150px;
+        margin-top: 1px;
+    }
+    .menu-list a  {
+        font-size: 26px;
+    }
+    .menu-container .menu-list {
+        gap: 30px;
+    }
+    .menu-list {
+        gap: 30px;
+    }
+    .profile-list {
+        gap: 30px;
+    }
+    .main-content .slayd-wrapper {
+        left: 35px;
+        top: 85px;
+        width: 100%;
+        height: 1200px;
+        border: black;
+    }
+    .profile-icon a img {
+        width: 20px;
+        margin-left: 10px;
+    }
+    .dropdown .dropbtn {
+        padding: 12px 10px;
+    }
+    .dropbtn {
+    font-size: 24px;
+    }
+    .dropdown .dropdown-content {
+        min-width: 160px;
+    }
+    .dropdown-content a {
+        padding: 12px 16px;
+        font-size: 100%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 150px;
+        top: 200px;
+    }
+    .main-content .slayd-text-wrapper p {
+        margin-bottom: 20px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 16px;
+        padding: 5px 10px;
+    } 
+    .slayd-text-wrapper .buttons {
+        -webkit-column-gap: 10px;
+           -moz-column-gap: 10px;
+                column-gap: 10px;
+    }
+    body .movie-list-container1 {
+        margin-top: 1400px;
+        margin-left: 70px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 70px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-wrapper .menu-list {
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+        height: 300px;
+    }
+    .movie-item:hover .movie-item-img {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        margin: 0 0px;
+        opacity: 0.6;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 120px;
+        width: 100px;
+        top: 100px;
+        right: 0px;
+    }
+}
+
+/* სამაგიდო კომპიუტერი */
+@media (min-width: 2400px) {
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+    header .navbar {
+        height: 85px;
+        width: 100%;
+        top: 0;
+    }
+    .navbar .navbar-wrapper {
+        padding: 0 50px;
+    }
+    .navbar-wrapper .navbar-img {
+        width: 150px;
+        margin-top: 1px;
+    }
+    .menu-list a  {
+        font-size: 26px;
+    }
+    .menu-container .menu-list {
+        gap: 30px;
+    }
+    .menu-list {
+        gap: 30px;
+    }
+    .profile-list {
+        gap: 30px;
+    }
+    .main-content .slayd-wrapper {
+        left: 35px;
+        top: 85px;
+        width: 100%;
+        height: 1400px;
+        border: black;
+    }
+    .profile-icon a img {
+        width: 20px;
+        margin-left: 10px;
+    }
+    .dropdown .dropbtn {
+        padding: 12px 10px;
+    }
+    .dropbtn {
+    font-size: 24px;
+    }
+    .dropdown .dropdown-content {
+        min-width: 160px;
+    }
+    .dropdown-content a {
+        padding: 12px 16px;
+        font-size: 100%;
+    }
+    .main-content .slayd-text-wrapper {
+        left: 150px;
+        top: 200px;
+    }
+    .main-content .slayd-text-wrapper p {
+        margin-bottom: 20px;
+    }
+    .main-content .slayd-text-wrapper button {
+        font-size: 16px;
+        padding: 5px 10px;
+    } 
+    .slayd-text-wrapper .buttons {
+        -webkit-column-gap: 10px;
+           -moz-column-gap: 10px;
+                column-gap: 10px;
+    }
+    body .movie-list-container1 {
+        margin-top: 1600px;
+        margin-left: 70px;
+    }
+    body .movie-list-container2 {
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+    body .movie-list-container3 {
+        margin-top: 0px;
+        margin-left: 70px; 
+        margin-bottom: 50px;
+    }
+    .movie-list-wrapper .menu-list {
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+        height: 300px;
+    }
+    .movie-item:hover .movie-item-img {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        margin: 0 0px;
+        opacity: 0.6;
+    }
+    .movie-list-wrapper #isari {
+        font-size: 120px;
+        width: 100px;
+        top: 100px;
+        right: 0px;
+    }
+}
+
+
+
+/*! scrollball */
+/*! scrollball */
+/*! scrollball */
+/*! scrollball */
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(110, 110, 110);
+}
+
+/*! navbar */
+/*! navbar */
+/*! navbar */
+/*! navbar */
+
+.navbar {
+    height: 85px;
+    background-color: #021BA7;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding: 0 50px; /*  x და y */
+}
+
+.logo-wrapper {
+
+}
+
+.navbar-img {
+    width: 150px;
+    margin-top: 1px;
+}
+
+.menu-container .active,
+.menu-container a:hover  {
+    border-bottom: 2px solid transparent;
+    border-color: white;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;   /* სიის წერტილების დამალვა */
+    gap: 30px;  /* სიტყვებს შორის დაცილება */
+}
+
+.menu-list-item {
+
+}
+
+.menu-list-item-main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+.menu-list-item-main a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.menu-list-item a {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.menu-list-item a:hover {
+    font-weight: bold;
+}
+
+.profile-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0px;
+}
+
+.profile-icon {
+    width: 5px;
+}
+
+.profile-icon a {
+}
+
+.profile-icon img {
+    width: 20px;
+    background: 0px solid white;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.profile-listing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.profile-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;   /* სიის წერტილების დამალვა */
+    gap: 30px;  /* სიტყვებს შორის დაცილება */
+}
+
+.profile-list-item {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list a {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list-item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+.profile-list-item a:hover {
+    font-weight: bold;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list-item i {
+    display: none;
+    /* padding-top: 10px; */
+    /* margin-right: 5px; */
+}
+
+/*! drop-down */
+/*! drop-down */
+
+.burger {
+    margin-left: 140px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 12;
+    right: 42px;
+    font-size: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    z-index: 2;
+  }
+
+/*! sidebar */
+/*! sidebar */
+
+.sidebar {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+    row-gap: 30px; /* იკონები x წრფეზეა და ამიტომ row */
+    position: fixed; 
+    top: 85px;
+    z-index: 100;
+}
+
+.sidebar i {
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar i:hover {
+    color: rgb(183, 184, 184);
+}
+
+/* !  slayd-content */
+/* !  slayd-content */
+
+.main-content {
+    position: relative;
+    z-index: 3;
+}
+
+.slayd-wrapper {
+    /* width: 97.4%; */
+    overflow: hidden;
+    border: 1px solid #323232;
+    position: absolute;
+    left: 35px;
+    top: 85px;
+    /* width: 1393px;                                                                    */
+    /* height: 590px; */
+}
+/* ! ------------------------------------------------------ */
+/*  ------------------------------------------------------ */
+/* ? ------------------------------------------------------ */
+.slideshow-container {
+    /* max-width: 1380px; */
+    position: relative;
+    margin: auto;
+}
+
+.myPictures {
+    display: none;
+}
+
+.myPictures img {
+    width: 1390px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1;}
+}
+/* ! ------------------------------------------------------ */
+/*  ------------------------------------------------------ */
+/* ? ------------------------------------------------------ */
+
+/*! slayd-text */
+/*! slayd-text */
+
+.slayd-text-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+}
+
+.slayd-text-wrapper p {
+    font-size: x-large;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+    background: 1px solid rgba(145, 142, 142, 0.5);
+}
+
+.slayd-text-wrapper button {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+}
+
+.play-button {
+    background-color: rgba(255, 255, 255, 0.733);
+    color: black;
+}
+
+.play-button i {
+
+}
+
+.info-button {
+    background-color: rgba(145, 142, 142, 0.5);
+    color: white;
+}
+
+.info-button i {
+    padding-right: 5px;
+}
+
+/*! movie-list-container */
+/*! movie-list-container */
+
+.movie-list-container1 {
+    margin-left: 70px;
+    margin-top: 800px;
+    overflow: hidden;
+}
+
+.movie-list-container2 {
+    margin-left: 70px;
+    overflow: hidden;
+}
+
+.movie-list-container3 {
+    margin-left: 70px;
+    overflow: hidden;
+}
+
+.movie-list {
+    list-style: none;
+    padding: 0;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-wrapper {
+    position: relative;
+}
+
+.movie-list-title {
+    color: white;
+}
+
+.movie-item {
+    position: relative;
+}
+
+.movie-item:hover .movie-item-title {
+    opacity: 1;
+}
+
+.movie-item:hover .movie-item-button {
+    opacity: 1;
+}
+
+.movie-item:hover .movie-item-img {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    /* margin: 0 30px; ეს უბრალოდ ჩააჩოჩებს მარჯვნივ */
+    margin: 0 0px;
+    opacity: 0.6;
+}
+
+.movie-item-img {
+    width: 270px;
+    height: 180px;
+    -webkit-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.movie-item-title {
+    opacity: 0;
+    background-color: rgb(40, 40, 40, 0.4);
+    padding: 10px;
+    font-size: 28px;
+    font-family: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    color: white;
+    -webkit-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+.movie-item-button {
+    background-color: rgb(40, 40, 40, 0.4);
+    padding: 0 10px;
+    font-family: bold;
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    opacity: 0;
+    -webkit-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+.movie-item-button i {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 20px;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+.movie-item-button i:hover {
+    opacity: 1;
+}
+/* ! click */
+/* ! click */
+/* ! click */
+/* ! click */
+/* ! click */
+
+#isari {
+    color: azure;
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    opacity: 0.5;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.fa-chevron-right:hover {
+    opacity: 1;
+}
+
+/* ! footer */
+/* ! footer */
+/* ! footer */
+/* ! footer */
+
+.footer {
+    margin-top: 150px;
+    background-color: #021BA7;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 200px;
+       -moz-column-gap: 200px;
+            column-gap: 200px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer-links a:first-child::first-letter {
+    color: #899af7;
+}
+
+.footer-links a:first-child {
+    font-size: 18px;
+}

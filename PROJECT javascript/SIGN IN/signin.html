@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <title>სისტემაში შესვლა</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/SIGN IN/style/signin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="/logo-blue/favicon.png">
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-wrapper">
+                <div class="logo-wrapper">
+                <!-- <h1 class="logo">გელაძე</h1> -->
+                <a href="">
+                    <img class="navbar-img" src="/logo-blue/logo2.png">
+                </a>
+              </div>
+              <div class="menu-container">
+                  <ul class="menu-list">
+                      <li class="menu-list-item-main">
+                          <a href="/MAIN/index.html">მთავარი</a>
+                      </li>
+                      <li class="menu-list-item">
+                          <a href="/FILMS/films.html">ფილმები</a>
+                      </li>
+                      <li class="menu-list-item">
+                          <a href="/SERIES/series.html">სერიალები</a>
+                      </li>
+                      <li class="menu-list-item">
+                          <a href="/ANIMATIONn/animation.html">ანიმაციები</a>
+                      </li>
+                      <li class="menu-list-item">
+                          <a href="/POPULAR/popular.html">პოპულარული</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="profile-container">
+                <div class="profile-icon">
+                    <a href="">
+                        <img src="/icon/user-regular.svg">
+                    </a>
+                </div>
+                <div class="profile-listing">
+                    <ul class="profile-list">
+                        <li class="profile-list-item">
+                            <span class="profile-text">
+                                <div class="dropdown">
+                                    <button class="dropbtn">პროფილი</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">პროფილზე გადასვლა</a>
+                                        <a href="/REGISTRATION/registration.html">რეგისტრაცია</a>
+                                        <a href="#">გასვლა</a>
+                                    </div>
+                                </div>
+                            </span>
+                            <i class="fa-solid fa-bars"></i>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+          <!--! middle of the navbar-sidebar -->
+        <div class="sidebar">
+            <a href="/MAIN/index.html">
+            <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="/GeneralSearchBar/GeneralSearchBar.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="">
+            <i class="fa-solid fa-user-group"></i>
+            </a>
+            <a href="/Films Listing/FilmsLists.html">
+            <i class="fa-solid fa-bookmark"></i>
+            </a>
+            <a href="">
+            <i class="fa-solid fa-gear"></i>
+            </a>
+          </div>
+          <main>
+            <div class="registration-container">
+                <div class="registration-wrapper">
+                    <form id="signInForm">
+                        <div class="title">სისტემაში შესვლა</div>
+                        <div class="input-box">
+                            <input type="email" id="emailInput" placeholder="შეიყვანეთ ე-მაილი">
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id="passwordInput" placeholder="შეიყვანეთ პაროლი">
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input-box-button">
+                            <input type="submit" value="დარეგისტრირდი" id="submitButton" onclick="sign(event)">
+                        </div>
+                    </form>
+                    <div class="text">ან გამოიყენეთ სოციალური ქსელი</div>
+                    <!-- ღილაკები -->
+                    <div class="github">
+                        <a href="#"><i class="fab fa-github"></i>გითჰაბით დარეგისტრირდი</a>
+                    </div>
+                    <div class="instagram">
+                        <a href="#"><i class="fab fa-instagram"></i>ინსტაგრამით დარეგისტრირდი</a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#"><i class="fab fa-facebook"></i>ფეისბუქით დარეგისტრირდი</a>
+                    </div>
+                </div>
+            </div>
+          </main>
+          <footer>
+            <div class="footer">
+                <div class="footer-links">
+                    <a href="/MAIN/index.html">GELADZE</a>
+                    <a href="/About Us/AboutUs.html">ჩვენს შესახებ</a>
+                    <a href="/Contact Us/ContactUs.html">დაგვიკავშირდით</a>
+                </div>
+                <p>პროექტი მზადდებოდა პერიოდში: 09.-10. /2023  All Rights Are Received</p>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="/SIGN IN/script/signin.js"></script>
+  </body>
+</html>

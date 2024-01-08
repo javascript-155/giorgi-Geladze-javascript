@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.myPictures {
+    display: none;
+}
+
+.myPictures img {
+    width: 800px;
+}
+
+.Dotes {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 4px;
+    background-color: rgb(240, 134, 5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1;}
+}

@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}   
+
+.navbar {
+    height: 85px;
+    background-color: #021BA7;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding: 0 50px; /*  x და y */
+}
+.navbar-img {
+    width: 150px;
+    margin-top: 1px;
+}
+
+.menu-container .active,
+.menu-container a:hover  {
+    border-bottom: 2px solid transparent;
+    border-color: white;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;   /* სიის წერტილების დამალვა */
+    gap: 30px;  /* სიტყვებს შორის დაცილება */
+}
+.menu-list-item-main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+.menu-list-item-main a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.menu-list-item a {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.menu-list-item a:hover {
+    font-weight: bold;
+}
+
+.profile-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0px;
+}
+
+.profile-icon {
+    width: 5px;
+}
+.profile-icon img {
+    width: 20px;
+    background: 0px solid white;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.profile-listing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.profile-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;   /* სიის წერტილების დამალვა */
+    gap: 30px;  /* სიტყვებს შორის დაცილება */
+}
+
+.profile-list-item {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list a {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list-item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+.profile-list-item a:hover {
+    font-weight: bold;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list-item i {
+    display: none;
+    /* padding-top: 10px; */
+    /* margin-right: 5px; */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+    background-color: #021BA7;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-animation: transform 0.3s ease;
+            animation: transform 0.3s ease;
+}
+
+@-webkit-keyframes transform {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes transform {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #021BA7;
+}
+
+/*! sidebar */
+/*! sidebar */
+
+.sidebar {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+    row-gap: 30px; /* იკონები x წრფეზეა და ამიტომ row */
+    position: fixed; 
+    top: 85px;
+}
+
+.sidebar i {
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar i:hover {
+    color: rgb(183, 184, 184);
+}
+
+/* !  slayd-content */
+/* !  slayd-content */
+
+.main-content {
+    position: relative;
+    z-index: 1;
+}
+
+.slayd-wrapper {
+    /* overflow: hidden; */
+    border: 1px solid #323232;
+    position: absolute;
+    left: 35px;
+    top: 85px;
+}
+
+/* ! ------------------------------------------------------ */
+/*  ------------------------------------------------------ */
+/* ? ------------------------------------------------------ */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.myPictures {
+    display: none;
+}
+
+.myPictures img {
+    width: 1380px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1;}
+}
+/* ----------------------------------- */
+.slayd-text-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+}
+
+.slayd-text-wrapper p {
+    font-size: x-large;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+    background: 1px solid rgba(145, 142, 142, 0.5);
+}
+
+.slayd-text-wrapper button {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+}
+
+.play-button {
+    background-color: rgba(255, 255, 255, 0.733);
+    color: black;
+}
+
+.info-button {
+    background-color: rgba(145, 142, 142, 0.5);
+    color: white;
+}
+
+.info-button i {
+    padding-right: 5px;
+}
+
+/*! movie-list-container */
+/*! movie-list-container */
+
+.movie-list-container1 {
+    margin-left: 70px;
+    margin-top: 800px;
+    overflow: hidden;
+}
+
+.movie-list-container2 {
+    margin-left: 70px;
+    overflow: hidden;
+}
+
+.movie-list-container3 {
+    margin-left: 70px;
+    overflow: hidden;
+}
+
+.movie-list {
+    list-style: none;
+    padding: 0;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-wrapper {
+    position: relative;
+}
+
+.movie-list-title {
+    color: white;
+}
+
+.movie-item {
+    position: relative;
+}
+
+.movie-item:hover .movie-item-title {
+    opacity: 1;
+}
+
+.movie-item:hover .movie-item-button {
+    opacity: 1;
+}
+
+.movie-item:hover .movie-item-img {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    /* margin: 0 30px; ეს უბრალოდ ჩააჩოჩებს მარჯვნივ */
+    margin: 0 0px;
+    opacity: 0.6;
+}
+
+.movie-item-img {
+    width: 270px;
+    height: 180px;
+    -webkit-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.movie-item-title {
+    opacity: 0;
+    background-color: rgb(40, 40, 40, 0.4);
+    padding: 10px;
+    font-size: 28px;
+    font-family: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    color: white;
+    -webkit-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+.movie-item-button {
+    background-color: rgb(40, 40, 40, 0.4);
+    padding: 0 10px;
+    font-family: bold;
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    opacity: 0;
+    -webkit-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+.movie-item-button i {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 20px;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+.movie-item-button i:hover {
+    opacity: 1;
+}
+#isari {
+    color: azure;
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    opacity: 0.5;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.fa-chevron-right:hover {
+    opacity: 1;
+}
+.footer {
+    margin-top: 150px;
+    background-color: #021BA7;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 200px;
+       -moz-column-gap: 200px;
+            column-gap: 200px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer-links a:first-child::first-letter {
+    color: #899af7;
+}
+
+.footer-links a:first-child {
+    font-size: 18px;
+}
