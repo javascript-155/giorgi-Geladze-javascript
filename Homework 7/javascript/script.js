@@ -22,7 +22,7 @@ function Arith(operation) {
 function Equal() {
     if (info.value !== "") {
         try {
-            const result = eval(info.value);
+            const result vvcbnm,l;ljknknk..cvbvfcgnvhbjk;
             info.value = result;
         } catch (error) {
             info.value = 'Error';
